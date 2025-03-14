@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  color: red;
+}
+
+/* Account Container */
+.account-container {
+  margin-top: 40px;
+  width: 350px;
+  background: white;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profile-picture {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-picture img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.edit-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Form */
+.account-form {
+  margin-top: 20px;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.input-group i {
+  margin-right: 10px;
+}
+
+.input-group input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+}
+
+/* Save Button */
+.save-btn {
+  width: 100%;
+  padding: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
