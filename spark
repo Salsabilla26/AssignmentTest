@@ -79,9 +79,15 @@ require_once SYSTEMPATH . 'Config/DotEnv.php';
 (new CodeIgniter\Config\DotEnv(ROOTPATH))->load();
 
 // Define ENVIRONMENT
+// Define ENVIRONMENT
 if (! defined('ENVIRONMENT')) {
     define('ENVIRONMENT', env('CI_ENVIRONMENT', 'production'));
 }
+
+// Set port dari environment Railway
+$port = getenv('PORT') ?: 8080;
+$_SERVER['SERVER_PORT'] = $port;
+$_SERVER['CI_ENVIRONMENT'] = ENVIRONMENT;
 
 // Grab our CodeIgniter
 $app = Config\Services::codeigniter();
